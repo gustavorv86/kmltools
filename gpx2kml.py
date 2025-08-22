@@ -15,28 +15,6 @@ KML_TEMPLATE = """
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>track_template.kml</name>
-	<StyleMap id="sm_default">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_default</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_default_hl</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_default">
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>3</width>
-		</LineStyle>
-	</Style>
-	<Style id="s_default_hl">
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>3</width>
-		</LineStyle>
-	</Style>
 	<Placemark>
 		<name>track_template</name>
 		<styleUrl>#sm_default</styleUrl>

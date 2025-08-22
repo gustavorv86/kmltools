@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpx version="1.0" xmlns="http://www.topografix.com/GPX/1/0">
+	<trk>
+		<name>track_01</name>
+		<trkseg>
+			<trkpt lat="40.57303696941811" lon="-3.165846292183493">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57291774879362" lon="-3.165206140341128">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57259380420662" lon="-3.165029286673897">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57238043646743" lon="-3.164919330437481">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57194399907058" lon="-3.16473439630917">
+				<ele>0</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+	<trk>
+		<name>track_02</name>
+		<trkseg>
+			<trkpt lat="40.5719176502806" lon="-3.164731444260465">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57157959166516" lon="-3.165584005227799">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57117661022294" lon="-3.166615978855041">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.5708648970374" lon="-3.167372361037109">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57061786075881" lon="-3.167452596759774">
+				<ele>0</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+	<trk>
+		<name>track_03</name>
+		<trkseg>
+			<trkpt lat="40.57060358071323" lon="-3.167490279563492">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.57018370972452" lon="-3.168890438178562">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56985079421639" lon="-3.170326617886401">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56947671749928" lon="-3.171725482667791">
+				<ele>0</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+	<trk>
+		<name>track_04</name>
+		<trkseg>
+			<trkpt lat="40.56948789791723" lon="-3.171782685630038">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56932321602836" lon="-3.174208533701297">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56919750706325" lon="-3.17524311159795">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56911393401968" lon="-3.176131347258583">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56874592707028" lon="-3.177480056971214">
+				<ele>0</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+	<trk>
+		<name>track_05</name>
+		<trkseg>
+			<trkpt lat="40.56873788410152" lon="-3.177561896344903">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56858091956319" lon="-3.17855245269166">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56859352848564" lon="-3.179437788297317">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56830434961014" lon="-3.180352267691207">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56797392107401" lon="-3.181104021111691">
+				<ele>0</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+	<trk>
+		<name>track_06</name>
+		<trkseg>
+			<trkpt lat="40.56795712477844" lon="-3.181169289900404">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56762194275174" lon="-3.182146472662192">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56743037591523" lon="-3.182855666950867">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56722855624897" lon="-3.183085431433517">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56692514232927" lon="-3.183729589214912">
+				<ele>0</ele>
+			</trkpt>
+			<trkpt lat="40.56667356414363" lon="-3.184590902872848">
+				<ele>0</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

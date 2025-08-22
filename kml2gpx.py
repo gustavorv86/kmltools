@@ -3,28 +3,9 @@
 import logging
 import os.path
 import sys
-import xml.dom.minidom as minidom
+from _kmltools_common import KmlParser
 
 NAME = os.path.basename(sys.argv[0])
-
-LOG_NAME = "kmltools"
-LOG_LEVEL = logging.DEBUG
-LOG_FORMAT = '%(levelname)s: %(message)s'
-
-GPX_TEMPLATE = """
-<gpx version="1.0" xmlns="http://www.topografix.com/GPX/1/0">
-	<!--
-	<trk>
-		<name>gpxname</name>
-		<trkseg>
-			<trkpt lat="0" lon="0">
-				<ele>0</ele>
-			</trkpt>
-		</trkseg>
-	</trk>
-	-->
-</gpx>
-"""
 
 
 def usage():
@@ -37,20 +18,7 @@ def usage():
 	""".format(NAME))
 
 
-def logger():
-	log_formatter = logging.Formatter(LOG_FORMAT)
-
-	stream_handler = logging.StreamHandler(sys.stdout)
-	stream_handler.setFormatter(log_formatter)
-	stream_handler.setLevel(LOG_LEVEL)
-
-	log = logging.getLogger(LOG_NAME)
-	log.setLevel(LOG_LEVEL)
-	log.addHandler(stream_handler)
-
-	return log
-
-
+"""
 def kml2gpx(kml_file: str) -> minidom.Document | None:
 	log = logging.getLogger(LOG_NAME)
 
@@ -122,24 +90,10 @@ def kml2gpx(kml_file: str) -> minidom.Document | None:
 		gpx_node.appendChild(trk_node)
 
 	return output_dom
-
-
-def write_dom(dom: minidom.Document, filename: str):
-	log = logging.getLogger(LOG_NAME)
-
-	xml_txt = dom.toprettyxml()
-
-	fd = open(filename, "w")
-	for line in xml_txt.split('\n'):
-		if line.strip():
-			fd.write(line + "\n")
-	fd.close()
-
-	log.info("file {} created successfully.".format(filename))
+"""
 
 
 def main():
-	logger()
 	args = sys.argv[1:]
 
 	if not args:
@@ -151,17 +105,12 @@ def main():
 		exit(1)
 
 	filename = args[0]
-	dom = kml2gpx(filename)
+	kml = KmlParser(filename)
+	gpx = kml.to_gpx()
 
 	basename = os.path.splitext(filename)[0]
+	kml.write(basename, gpx, "gpx")
 
-	new_filename = basename + ".gpx"
-	count = 1
-	while os.path.exists(new_filename):
-		new_filename = basename + '_{}.gpx'.format(count)
-		count += 1
-
-	write_dom(dom, new_filename)
 	exit(0)
 
 
